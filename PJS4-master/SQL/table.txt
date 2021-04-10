@@ -1,0 +1,9 @@
+SQL TABLE : 
+
+- Inscrit (num_ins, nom , prenom, mail, mdp) 
+
+- Ami (#Ami1, #Ami2, demande, date_dem, rep_dem) -> Contrainte d'intégrité référentielle vers Inscrit
+
+- Note(#Inscrit, #Lieu, favoris, note) -> Contrainte d'intégrité référentielle vers Inscrit et Lieu
+
+- Lieu(id_lieu, nom, noteMoy, adresse, lng, lat)

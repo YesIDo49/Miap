@@ -1,0 +1,74 @@
+--
+-- Base de donnees :  `miap_bdd`
+--
+
+CREATE TABLE IF NOT EXISTS `inscrit` (
+  `id_ins` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` text COLLATE utf8_bin,
+  `prenom` text COLLATE utf8_bin,
+  `mail` text COLLATE utf8_bin NOT NULL,
+  `mdp` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id_ins`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+CREATE TABLE IF NOT EXISTS `lieu` (
+  `id_lieu` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` text COLLATE utf8_bin,
+  `noteMoy` float,
+  `adresse` text COLLATE utf8_bin,
+  `lat` FLOAT( 10, 6 ) NOT NULL ,
+  `lng` FLOAT( 10, 6 ) NOT NULL ,
+  PRIMARY KEY (`id_lieu`)
+);
+
+CREATE TABLE IF NOT EXISTS `ami` (
+  `ami1` int(11) NOT NULL,
+  `ami2` int(11) NOT NULL,
+  `demande` CHAR(1),
+  `date_dem` date,
+  `rep_dem` CHAR(1)
+);
+
+CREATE TABLE IF NOT EXISTS `note` (
+  `inscrit` int(11) NOT NULL,
+  `lieu` int(11) NOT NULL,
+  `favoris` CHAR(1),
+  `note` int(11)
+);
+
+ALTER TABLE ami
+ADD constraint fk_ida1
+FOREIGN KEY (ami1) REFERENCES inscrit(id_ins);
+
+ALTER TABLE ami
+ADD constraint fk_ida2
+FOREIGN KEY (ami2) REFERENCES inscrit(id_ins);
+
+ALTER TABLE ami
+ADD constraint pk_ida
+PRIMARY KEY (ami1, ami2);
+
+ALTER TABLE ami
+ADD constraint check_demande
+  check (demande in ('O', 'N'));
+
+ALTER TABLE ami
+ADD constraint check_rep_dem
+  check (rep_dem in ('O', 'N'));
+
+ALTER TABLE note
+ADD constraint pk_note
+PRIMARY KEY (inscrit, lieu);
+
+ALTER TABLE note 
+ADD constraint check_favoris
+  check (favoris in ('O', 'N'));
+
+ALTER TABLE note
+ADD constraint fk_noteins
+FOREIGN KEY (inscrit) REFERENCES inscrit(id_ins);
+
+ALTER TABLE note
+ADD constraint fk_notelieu
+FOREIGN KEY (lieu) REFERENCES lieu(id_lieu);
+
