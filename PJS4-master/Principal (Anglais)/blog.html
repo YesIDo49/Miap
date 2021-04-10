@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Miap</title>
+    <link rel="icon" type="image/png" href="./image/LogoPng.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+</head>
+<body class="main-layout">
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo"> <a href="index.html"><img src="./image/miap_fond.png" alt="Logo" class="img-fluid" id="logo"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <div class="menu-area">
+                        <div class="limit-box">
+                            <nav class="main-menu">
+                                <ul class="menu-area-main">
+                                    <li> <a href="./equipe.html">About</a>
+                                        <ul class="menu-area-main">
+                                            <li>Presentation of the project</li>
+                                            <li>Our team</li>
+                                        </ul>
+                                    </li>
+                                    <li> <a href="./blog.html">Blog</a> </li>
+                                    <li> <a href="./aide.html">Help & Contact</a> </li>
+                                    <li>
+                                        <form name="x" action="./index.php?controle=connexion&action=connexion" method="post">
+                                            <button type="submit" class="btn-link nav-link">Log in</button>
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <form name="x" action="./index.php?controle=inscription&action=affins" method="post">
+                                            <button id="login" type="submit" class="btn-link nav-link">Sign in</button>
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="../Principal/index.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header inner -->
+</header>
+
+    <div class="contenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2> Blog </h2>
+                        <span>Follow our culinary adventures on our blog !</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <div>
+                <div class="row">
+                    <img class="imgBlog img-fluid" src="image/houmous.jpg" alt="Houmous">
+                </div>
+                <h4><strong>Date: September 3rd, 2020</strong></h4>
+                <h4><strong>We don't get tired of Tintamarre !</strong></h4>
+                <div>
+                  <i><a href="#CollapseTinta" data-toggle="collapse" aria-expanded="false" aria-controls="CollapseTinta">Read more</a></i>
+                    <section id="CollapseTinta" class="collapse">
+                        <div class="colBlog">
+                            <p><br>In charge of Tintamarre, Gabrielle Beck, an ex architect, designer, who didn't leave anything to chance during her reconversion by training at Lenôtre. At Tintamarre, she shares her love for Lebanese food through her childhood memories and her know-how. For the starter, vegetables jars and Gabrielle who does her mix for the zaatar.
+                                <br><br><strong>
+                                In our plates ?</strong>
+                                <br>
+                                Hoummous : Mashed cheakpeas with tahina and lemon.
+                                <br>
+                                Cheakpeas fatteh : cooked cheakpeas with coriander and garlic topped with greek yogurt and pine nuts.
+                                <br>
+                                Croquettes of caramelized halloumi with honey and zaatar, tzatziki et spicy oil.
+                                <br>
+                                Frikeh of stewed beef : green weat, stewed beef with honey and soft spicies, seasonal vegetables.
+                                <br>
+                                Moudardara and its perfect egg : lentil with rice perfumed with cumin and pepper, red cabbage fondue.
+                                <br>
+                                Poached mandarin and rice pudding with citruses.<br>Chocolate mouhallabieh and caramelized pistachios.
+                                <br><br><b>How much ?</b><br>Dishes : 14,50€.<br>Lunch menu : starter + dish or dish + dessert : 16,50€<br>
+                                Kefta sandwich : 7,50€ / Veggie sandwich : 6,50€. (10€ with a starter).
+                
+                                <br><br>
+
+                                <b>It is excellent so go ahead !</b>
+                                <br>
+                                Source: <a>http://parisianavores.paris/tintamarre-restaurant-libanais-paris-19/</a>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <hr class="separation">
+
+            <div>
+                <div class="row">
+                    <img class="imgBlog" src="image/arepas.jpg" alt="Arepas Venezuela">
+                </div>
+                <h4><strong>Date: July 18th, 2020</strong></h4>
+                <h4><strong>Aji Dulce, Dolce vita incoming ! </strong></h4>
+                <div>
+                   <i> <a href="#CollapseArepa" data-toggle="collapse" aria-expanded="false" aria-controls="CollapseArepa">Read more</a></i>
+                    <section id="CollapseArepa" class="collapse">
+                        <div class="colBlog">
+                            <p>It is a food truck and a Venezuelan restaurant which gives pride to the most emblematic speciality of the Venezuelan street food : arepas. White corn patties, often garnished. Here, they are oven baked in a minute and served hot, crispy and garnished to your liking. You can choose between 9 recipes.
+                                <br>
+                                Aji Dulce has a food truck that moves and we can track its movements on their website and social medias, and a shop with a few seating places, in the 9th neighborhood in Saint-Georges.
+                                <br><br><strong>In our plates ?</strong>
+                                <br>Tequenos : doughnut filled with Venezuelan cream cheese.
+                                <br>Arepa Pelua : stewed frayed beef in a vegetable sauce and gouda cheese.
+                                <br>Arepa Catira : rosted chicken stewed in a vegetable sauce, amarillo cheese (gouda)
+                                <br>Arepa Queso : Venezuelan cream cheese, fresh avocado, fried plantain banana.
+                                <br>Tostones : green plantain banana chips lightly salted and Venezuelan cream cheese.
+                                <br><br>
+                                <strong>How much ?</strong>
+                                <br>Arepas : 10,50€
+                                <br>Lunch menu 13,50€ : Arepa + 2 sauces + starter, dessert or home made juice<br>
+                                <br><strong>Spice up your life !</strong>
+                                Source: <a>http://parisianavores.paris/aji-dulce-arepa-restaurant-venezuelien-paris-9/</a>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <hr class="separation">
+
+            <div>
+                <div class="row">
+                    <img class="imgBlog" src="image/platAsie.jpg" alt="Plat Asiatique">
+                </div>
+                <h4><strong>Date: 1 janvier 2020</strong></h4>
+                <h4><strong>La brigade du tigre, gare aux représailles !</strong></h4>
+                <div>
+                    <i><a href="#CollapseTigre" data-toggle="collapse" aria-expanded="false" aria-controls="CollapseTigre">En lire plus</a></i>
+                    <section id="CollapseTigre" class="collapse">
+                        <div class="colBlog">
+                            <p>
+                                La Brigade du Tigre, c’est le second restaurant d’Adrien Ferrand, à quelques pas du premier Eels, rue du Faubourg Poissonnière. Le pari ? Un voyage aux quatre coins de l’Asie, de la Thaïlande au Sri-Lanka, des incontournables de la street food aux spécialités traditionnelles, opéré par le chef Galien Emery.
+                                <br><br>
+                                <strong>Dans nos assiettes ?</strong>
+                                <br>3 menus déjeuner entrée-plat-dessert<br>
+                                Rouleau d’automne – miso rouge<br>Crab Cake – mayo piment<br>Raviolis grillés de champignons – Tom Kha pommes de terre
+                                <br>Tataki de boeuf de Galice – black beans<br>Merlu – chou pointu grillé – combawa gingembre
+                                <br>Poitrine de cochon confite et laquée – légumes verts – riz sauté<br>Mango sticky rice
+                                <br>Cake coco caramélisé – caramel cacahuète<br><br>
+                                <strong>C’est combien ?</strong>
+                                <br>Entrée – plat -dessert : 23€ // Entrée – plat ou plat – dessert : 19€
+                                <br><br>
+                                <strong>Avec ça on a une faim de loup ! (enfin de tigre ça le fait mieux) </strong>
+                                Source: <a>http://parisianavores.paris/la-brigade-du-tigre-restaurant-paris-10/</a>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+<div id="scroll_to_top">
+    <a href="#top"><img src="image/scroll.png" alt="Retourner en haut" /></a>
+</div>
+
+<footer>
+    <div class="footer pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 width">
+                    <div class="address">
+                        <h3>Adresse</h3>
+                        <p><img src="icon/3.png">143 Avenue de Versailles, 75016 Paris</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 width">
+                    <div class="address">
+                        <h3>Menu</h3>
+                        <p><a href="./blog.html">Blog</a></p>
+                        <p><a href="./equipe.html">A propos</a></p>
+                        <p><a href="./aide.html">Aide & Contact</a></p>
+                        <p><a href="#">Connexion</a></p>
+                        <p><a href="#">Inscription</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 width">
+                    <div class="address">
+                        <h3>Réseaux Sociaux </h3>
+                        <div class="contant_icon">
+                            <!--<li><img src="icon/fb.png" alt="icon"/></li>-->
+                            <p><a href="https://twitter.com/Miap09882942"><img src="icon/tw.png" alt="icon"/></a>
+                                @MiapO9882942</p>
+                            <br>
+                            <!--<li><img src="icon/lin (2).png" alt="icon"/></li>-->
+                            <p><a href="https://www.instagram.com/miapies_world/"><img src="icon/instagram.png" alt="icon"/></a>
+                                @miapies_world</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Javascript files--> 
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/jquery-3.0.0.min.js"></script> 
+    <script src="js/plugin.js"></script> 
+    <!-- sidebar --> 
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script src="js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });
+        
+        $(".zoom").hover(function(){
+        
+        $(this).addClass('transition');
+        }, function(){
+        
+        $(this).removeClass('transition');
+        });
+        });
+        
+    </script> 
+</body>
+</html>
